@@ -1,0 +1,19 @@
+<nb-card class="payment-card" accent="success">
+    <nb-card-header class="d-flex custom-header p-0 justify-content-between align-items-center flex-wrap">
+        <span *ngIf="!isSearching" class="d-flex align-items-center pl-2 m-0">
+            Paiements
+        </span>
+        <ngx-locatus-card-header-actions *ngIf="!isSearching" (actionClicked)="handleHeaderActionClicked($event.action)" [actions]="headerConfig">
+        </ngx-locatus-card-header-actions>
+        <ngx-locatus-card-search *ngIf="isSearching" class="w-100" [fields]="searchFields" (searchChange)="onSearch($event)" (closeSearch)="isSearching = false"></ngx-locatus-card-search>
+    </nb-card-header>
+    <nb-card-body class="p-0">
+        <ngx-locatus-mobile-card-header-actions *ngIf="!isSearching" (actionClicked)="handleHeaderActionClicked($event.action)" [actions]="headerConfig"></ngx-locatus-mobile-card-header-actions>
+        <div class="border-bottom mb-3" [ngbCollapse]="isFilterCollapsed">
+            <ngx-locatus-filters [config]="filters" (filtersChanged)="handleFiltersChanged($event)"></ngx-locatus-filters>
+        </div>
+        <div class="mt-3">
+            <dtc-table [config]="config" [data]="data$ | async"></dtc-table>
+        </div>
+    </nb-card-body>
+</nb-card>
