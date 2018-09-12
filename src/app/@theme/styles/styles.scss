@@ -15,6 +15,7 @@ $row-text-size: 0.875rem;
 $row-text-color: #777;
 $row-link-color: #777;
 $collapse-color: #40dc7e;
+$row-checkbox-color: #40dc7e;
 @import '~distinct-table/styles/styles';
 // install the framework and custom global styles
 @include nb-install() {

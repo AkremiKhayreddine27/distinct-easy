@@ -2,10 +2,10 @@ import { of } from "rxjs";
 import { delay } from "rxjs/operators";
 
 export const statuses: any[] = [
-    { id: 1, value: 'validée', cssClass: 'badge-success' },
-    { id: 2, value: 'provisoire', cssClass: 'badge-warning' },
-    { id: 3, value: 'annulée', cssClass: 'badge-danger' },
-    { id: 4, value: 'terminée', cssClass: 'badge-info' }
+    { id: 1, value: 'validée', cssClass: 'nb-badge nb-badge-success' },
+    { id: 2, value: 'provisoire', cssClass: 'nb-badge nb-badge-warning' },
+    { id: 3, value: 'annulée', cssClass: 'nb-badge nb-badge-danger' },
+    { id: 4, value: 'terminée', cssClass: 'nb-badge nb-badge-info' }
 ];
 
 export const platforms: any[] = [

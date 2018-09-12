@@ -8,6 +8,7 @@ import { LayoutService } from './layout.service';
 import { UserService } from './users.service';
 import { PropertiesService } from './services/properties.service';
 import { ReservationsService } from './services/reservations.service';
+import { ServicesService } from './services/services.service';
 import { PaymentsService } from './services/payments.service';
 import { ContactsService } from './services/contacts.service';
 import { DocumentsService } from './services/documents.service';
@@ -18,6 +19,7 @@ const SERVICES = [
   UserService,
   PropertiesService,
   ReservationsService,
+  ServicesService,
   PaymentsService,
   ContactsService,
   DocumentsService

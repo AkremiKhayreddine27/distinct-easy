@@ -1,20 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
-import { ThemeModule } from '../../@theme/theme.module';
+import { ThemeModule } from "../../@theme/theme.module";
 
-import { ReservationsRoutingModule, routedComponents } from './reservations-routing.module';
+import {
+  ReservationsRoutingModule,
+  routedComponents
+} from "./reservations-routing.module";
 
-import { DistinctTableModule } from 'distinct-table';
+import { DistinctTableModule } from "distinct-table";
 
- 
 @NgModule({
   imports: [
     CommonModule,
     ThemeModule,
     ReservationsRoutingModule,
-    DistinctTableModule,
+    DistinctTableModule
   ],
   declarations: [...routedComponents]
 })
-export class ReservationsModule { }
+export class ReservationsModule {}

@@ -1,0 +1,25 @@
+<nb-card size="xsmall" class="solar-card">
+  <nb-card-header class="d-flex justify-content-between">
+    <span>Dépenses</span>
+    <span class="text-hint font-weight-light small">jusqu'à aujourd'hui</span>
+  </nb-card-header>
+  <nb-card-body class="d-flex align-items-center">
+    <div echarts [options]="option" class="echart">
+    </div>
+    <div class="info d-flex flex-column justify-content-center">
+      <div class="success pb-3">
+        {{ finances.expenses }}
+        <span>$ dépensé
+        </span>
+      </div>
+      <div class="danger pb-3">
+        {{ finances.inDelayExpenses }}
+        <span>$ en retards</span>
+      </div>
+      <div class="grey">
+        {{ finances.pendingExpenses }}
+        <span>$ en attente</span>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

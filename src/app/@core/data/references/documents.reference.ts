@@ -25,17 +25,17 @@ export const categoryTypes: any[] = [
     {
         id: 1,
         value: 'Bien',
-        cssClass: 'badge-success',
+        cssClass: 'nb-badge nb-badge-success',
     },
     {
         id: 2,
         value: 'Réservation',
-        cssClass: 'badge-danger',
+        cssClass: 'nb-badge ng-badge-danger',
     },
     {
         id: 3,
         value: 'Service',
-        cssClass: 'badge-info',
+        cssClass: 'nb-badge nb-badge-info',
     },
 ];
 

@@ -118,27 +118,27 @@ export const statuses: any[] = [
     {
         id: 1,
         value: 'Reglé',
-        cssClass: 'badge-success',
+        cssClass: 'nb-badge nb-badge-success',
     },
     {
         id: 2,
         value: 'En attente',
-        cssClass: 'badge-primary',
+        cssClass: 'nb-badge nb-badge-primary',
     },
     {
         id: 3,
         value: 'En retard',
-        cssClass: 'badge-danger',
+        cssClass: 'nb-badge nb-badge-danger',
     },
     {
         id: 4,
         value: 'Annulé',
-        cssClass: 'badge-danger',
+        cssClass: 'nb-badge nb-badge-danger',
     },
     {
         id: 5,
         value: 'En litige',
-        cssClass: 'badge-warning',
+        cssClass: 'nb-badge nb-badge-warning',
     },
 ];
 

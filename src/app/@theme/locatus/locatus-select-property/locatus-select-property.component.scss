@@ -85,7 +85,7 @@
             box-shadow: 0 0 3px 10px rgba(nb-theme(color-fg-highlight), 0.4);
         }
         100% {
-            box-shadow: 0 0 5px 20px rgba(nb-theme(color-fg-highlight), 0);
+            box-shadow: 0 0 5px 10px rgba(nb-theme(color-fg-highlight), 0);
         }
     }
     @include keyframes(pulse-light) {
@@ -96,7 +96,7 @@
             box-shadow: 0 0 3px 10px rgba(115, 255, 208, 0.4);
         }
         100% {
-            box-shadow: 0 0 5px 20px rgba(115, 255, 208, 0);
+            box-shadow: 0 0 5px 10px rgba(115, 255, 208, 0);
         }
     }
 }

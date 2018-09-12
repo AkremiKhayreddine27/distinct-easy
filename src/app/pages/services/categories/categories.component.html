@@ -1,0 +1,20 @@
+<nb-card>
+  <nb-card-header class="d-flex p-0 align-items-center justify-content-between">
+    <span class="d-flex align-items-center">
+      <i class="nb-gear"></i>Services
+    </span>
+    <ngx-locatus-card-header-actions [actions]="headerActions" (actionClicked)="handleHeaderEvent($event)">
+    </ngx-locatus-card-header-actions>
+  </nb-card-header>
+  <nb-card-body class="p-0">
+    <nb-tabset fullWidth>
+      <nb-tab *ngFor="let category of categories" [tabTitle]="category.title">
+        <div class="row m-0 pt-4 pb-4">
+          <div *ngFor="let subCategory of getSubcategories(category.id)" class="col-md-4">
+            <ngx-category [subCategory]="subCategory"></ngx-category>
+          </div>
+        </div>
+      </nb-tab>
+    </nb-tabset>
+  </nb-card-body>
+</nb-card>

@@ -19,7 +19,7 @@ export interface Service {
     category: SelectItem;
     deadline: any;
     status: SelectItem;
-    provider: User;
+    provider?: User;
     contractNumber: string;
     contractDate: any;
     price: Price;

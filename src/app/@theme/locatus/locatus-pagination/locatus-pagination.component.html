@@ -1,7 +1,7 @@
 <div class="d-flex flex-wrap justify-content-end align-items-center">
   <div *ngIf="paging && totalPages > 1" class="pagination-details d-flex align-items-center p-2">
     <span class="pr-2">Eléments par page:</span>
-    <ng-select [clearable]="false" (change)="onChange($event)" [(ngModel)]="paging.perPage" [items]="selectItems | async">
+    <ng-select class="pagination-select" [clearable]="false" (change)="onChange($event)" [(ngModel)]="paging.perPage" [items]="selectItems | async">
     </ng-select>
   </div>
   <div class="pagination-details p-2">
